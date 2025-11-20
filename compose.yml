@@ -1,0 +1,5 @@
+include:
+  - ./compose-proxy.yml
+  - ./compose-database.yml
+  - ./compose-services.yml
+services: {}

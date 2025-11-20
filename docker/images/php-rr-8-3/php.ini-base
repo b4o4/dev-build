@@ -1,0 +1,18 @@
+[PHP]
+
+; Эти настройки позволяют Sentry получать больше данных.
+zend.exception_ignore_args = Off
+zend.exception_string_param_max_len = 15
+
+expose_php = Off
+
+memory_limit = 256M
+
+; Значение из конфига Laravel Sail
+variables_order = "EGPCS"
+
+[Assertion]
+
+; Включаем ассёрты в том числе в проде, чтобы можно было использовать их
+; для проверки корректности кода
+zend.assertions = 1
