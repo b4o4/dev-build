@@ -1,0 +1,11 @@
+[xdebug]
+xdebug.client_host = host.docker.internal
+
+xdebug.trace_format = ${XDEBUG_TRACE_FORMAT:-0}
+
+; Генерируемые файлы
+xdebug.output_dir = ${XDEBUG_OUTPUT_DIR:-/tmp}
+xdebug.trace_output_name = trace.%R.%t
+xdebug.gc_stats_output_name = gcstats.%R.%t
+xdebug.profiler_output_name = cachegrind.out.%R.%t
+xdebug.use_compression = false

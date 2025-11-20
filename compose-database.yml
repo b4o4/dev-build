@@ -1,7 +1,7 @@
 services:
   postgres:
     build: ./docker/images/postgres
-    container_name: build-postgres
+    container_name: dev-build_postgres
     networks:
       - postgres
     environment:
@@ -15,7 +15,7 @@ services:
     - "5432:5432"
   redis:
     build: ./docker/images/redis
-    container_name: build-redis
+    container_name: dev-build_redis
     mem_limit: 1024m
     networks:
       - redis
